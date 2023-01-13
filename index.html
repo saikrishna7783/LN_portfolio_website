@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Lakshminarayana.in</title>
   </head>
   <body>
@@ -59,8 +67,8 @@
           >
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-black dark:text-white"
+                href="./aboutMe.html"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-white"
                 aria-current="page"
                 >About Me</a
               >
@@ -68,21 +76,21 @@
             <li>
               <a
                 href="#publications"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent dark:border-gray-700"
                 >Publications</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent dark:border-gray-700"
                 >Projects</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent dark:border-gray-700"
                 >Other Work</a
               >
             </li>
@@ -145,14 +153,15 @@
             >
               My Top Publications
             </h2>
-            <p
-              class="max-w-xl mx-auto mt-4 text-lg leading-relaxed text-gray-600 lg:mx-0"
-            >
-              See All<img
-                class="inline ml-2"
-                src="https://img.icons8.com/pastel-glyph/32/null/drag-right-arrow.png"
-              />
-            </p>
+            <a href="#" class="hover:underline"
+              ><p
+                class="max-w-xl mx-auto mt-4 text-lg leading-relaxed text-gray-600 lg:mx-0"
+              >
+                See All<img
+                  class="inline ml-2"
+                  src="https://img.icons8.com/pastel-glyph/32/null/drag-right-arrow.png"
+                /></p
+            ></a>
           </div>
         </div>
 
@@ -259,9 +268,14 @@
       />
       <span
         class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >Copyright © 2023
-        <a href="/" class="hover:underline">Lakshminarayana.in</a> <br />
-        All Rights Reserved.
+        >Copyright © 2023 |
+        <a href="/" class="hover:underline">Lakshminarayana.in</a>
+        | All Rights Reserved.
+      </span>
+      <span
+        class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >Developed by
+        <a href="/" class="hover:underline">Random Tech Solutions</a>
       </span>
     </footer>
 
