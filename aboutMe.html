@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0047B2" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -12,6 +31,20 @@
       }
       html {
         scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 0.7vw;
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: -webkit-linear-gradient(transparent, #999);
+        background: linear-gradient(transparent, #999);
+        border-radius: 20px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: -webkit-linear-gradient(transparent, #00c6ff);
+        background: linear-gradient(transparent, #00c6ff);
+        border-radius: 10px;
       }
     </style>
     <title>Lakshminarayana.in</title>
@@ -90,7 +123,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="./other_works.html"
                 class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
                 >Other Work</a
               >
