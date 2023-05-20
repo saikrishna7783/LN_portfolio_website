@@ -1,353 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0047B2" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon_io/site.webmanifest" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-      * {
-        font-family: "Poppins", sans-serif;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      ::-webkit-scrollbar {
-        width: 0.7vw;
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: -webkit-linear-gradient(transparent, #999);
-        background: linear-gradient(transparent, #999);
-        border-radius: 20px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: -webkit-linear-gradient(transparent, #00c6ff);
-        background: linear-gradient(transparent, #00c6ff);
-        border-radius: 10px;
-      }
-    </style>
 
-    <title>Lakshminarayana.in</title>
-  </head>
-  <body>
-    <!-- ##########################NAVBAR############################## -->
-    <nav
-      class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10"
-    >
-      <div class="flex flex-wrap items-center justify-between mx-auto">
-        <a href="./index.html" class="flex items-center">
-          <span
-            class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
-            >Lakshminarayana.in</span
-          >
-        </a>
-        <div class="flex md:order-2">
-          <button
-            type="button"
-            class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Contact Me
-          </button>
-          <button
-            id="navbar-cta-btn"
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="./aboutMe.html"
-                class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
-                aria-current="page"
-                >About Me</a
-              >
-            </li>
-            <li>
-              <a
-                href="#publications"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
-                >Publications</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="./other_works.html"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
-                >Other Work</a
-              >
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0047B2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="./favicon_io/site.webmanifest" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.7vw;
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: -webkit-linear-gradient(transparent, #999);
+      background: linear-gradient(transparent, #999);
+      border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: -webkit-linear-gradient(transparent, #00c6ff);
+      background: linear-gradient(transparent, #00c6ff);
+      border-radius: 10px;
+    }
+  </style>
+
+  <title>Lakshminarayana</title>
+</head>
+
+<body>
+  <!-- ##########################NAVBAR############################## -->
+  <nav class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10">
+    <div class="flex flex-wrap items-center justify-between mx-auto">
+      <a href="./index.html" class="flex items-center">
+        <span
+          class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.in</span>
+      </a>
+      <div class="flex md:order-2">
+        <button type="button"
+          class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Contact Me
+        </button>
+        <button id="navbar-cta-btn" data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
-    </nav>
-    <!-- ##########################NAVBAR############################## -->
-    <!-- #############################Hero Section######################### -->
-    <section
-      class="pt-10 pb-24 bg-[url('./imgs/hero_bg.svg')] bg-no-repeat bg-cover overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16"
-    >
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="grid items-center grid-cols-1 md:grid-cols-2">
-          <div class="mt-40">
-            <h2
-              class="text-5xl font-bold leading-tight text-[#ACB3B8] sm:text-6xl lg:text-8xl"
-            >
-              HELLO
-            </h2>
-            <h2
-              class="text-3xl font-bold leading-tight text-[#0047B2] sm:text-4xl lg:text-5xl"
-            >
-              <span>I'm </span> <br />Dr.C. Lakshminarayna
-            </h2>
-            <p
-              class="max-w-lg mt-3 text-2xl leading-relaxed text-gray-800 md:mt-8"
-            >
-              Professor EEE Chair, IEEE SSIT Bangalore Chapter, B.M.S.C.E
-              Bangalore.
-            </p>
-          </div>
-
-          <div class="relative top-32">
-            <img
-              class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
-              src="./imgs/ln_bg.svg"
-              alt=""
-            />
-
-            <img
-              class="relative bottom-0 w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-              src="./imgs/ln_img.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- #############################Hero Section######################### -->
-
-    <!-- #############################Publications######################### -->
-    <section id="publications" class="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="flex items-end justify-between">
-          <div class="flex-1 text-center lg:text-left">
-            <h2
-              class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
-            >
-              My Top Publications
-            </h2>
-            <a
-              target="_blank"
-              href="https://scholar.google.com/citations?hl=en&user=HpOuDWYAAAAJ"
-              class="hover:underline"
-              ><p
-                class="max-w-xl mx-auto mt-4 text-lg leading-relaxed text-gray-600 lg:mx-0"
-              >
-                See All<img
-                  class="inline ml-2"
-                  src="https://img.icons8.com/pastel-glyph/32/null/drag-right-arrow.png"
-                /></p
-            ></a>
-          </div>
-        </div>
-
-        <a
-          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HpOuDWYAAAAJ&citation_for_view=HpOuDWYAAAAJ:5nxA0vEk-isC"
-          target="_blank"
-          class="mt-8 flex flex-col items-center justify-between bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] dark:hover:bg-[#E5DDD5]"
-        >
-          <div class="flex flex-col justify-between p-12 leading-normal">
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
-            >
-              Optimal siting of capacitors in radial distribution network using
-              whale optimization algorithm
-            </h5>
-            <p
-              class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700"
-            >
-              In present days, continuous effort is being made in bringing down
-              the line losses of the electrical distribution networks. Therefore
-              proper allocation of capacitors is of utmost importance because,
-              it will help in reducing the line losses and maintaining the bus
-              voltage. This in turn results in improving the stability and
-              reliability of the system.
-            </p>
-          </div>
-
-          <img
-            class="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-[40%] md:rounded-none md:rounded-l-lg"
-            src="./imgs/publication_1.png"
-            alt=""
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HpOuDWYAAAAJ&citation_for_view=HpOuDWYAAAAJ:UebtZRa9Y70C"
-          class="mt-8 flex flex-col items-center justify-between bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] dark:hover:bg-[#E5DDD5]"
-        >
-          <div class="flex flex-col justify-between p-12 leading-normal">
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
-            >
-              Multiple DG placements in distribution system for power loss
-              reduction using PSO algorithm
-            </h5>
-            <p
-              class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700"
-            >
-              Optimal placement and optimal sizing of Distributed Generation
-              (DG) for the sake of reduction in power loss and improvement of
-              voltage profile in distribution networks are investigated in this
-              paper. Particle Swarm Optimization (PSO) algorithm is used to find
-              out the best location and optimal size of DG.
-            </p>
-          </div>
-
-          <img
-            class="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-[40%] md:rounded-none md:rounded-l-lg"
-            src="./imgs/publication_1.png"
-            alt=""
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HpOuDWYAAAAJ&citation_for_view=HpOuDWYAAAAJ:4DMP91E08xMC"
-          class="mt-8 flex flex-col items-center justify-between bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] dark:hover:bg-[#E5DDD5]"
-        >
-          <div class="flex flex-col justify-between p-12 leading-normal">
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
-            >
-              Multiple DG placements in radial distribution system for multi
-              objectives using Whale Optimization Algorithm
-            </h5>
-            <p
-              class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700"
-            >
-              This study proposes a new application of Whale Optimization
-              Algorithm (WOA) with an aim of finding optimal placement and size
-              of Distributed Generation (DGs) for multi-objectives.
-              Multi-objectives include power loss minimization, voltage profile
-              improvement and operating cost minimization subjected to equality
-              and inequality constraints.
-            </p>
-          </div>
-
-          <img
-            class="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-[40%] md:rounded-none md:rounded-l-lg"
-            src="./imgs/publication_1.png"
-            alt=""
-          />
-        </a>
-        <!-- Cards end -->
-      </div>
-    </section>
-
-    <!-- #############################Publications######################### -->
-    <!-- #############################Footer######################### -->
-
-    <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <a href="/" class="flex items-center">
-          <span
-            class="self-center mb-2 sm:mb-0 text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
-            >Lakshminarayana.in</span
-          >
-        </a>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
         <ul
-          class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
-        >
+          class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700">
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+            <a href="./aboutMe.html"
+              class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
+              aria-current="page">About Me</a>
           </li>
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+            <a href="#publications"
+              class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Publications</a>
           </li>
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Projects</a>
           </li>
           <li>
-            <a href="#" class="hover:underline">LinkedIn</a>
+            <a href="./other_works.html"
+              class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Other
+              Work</a>
           </li>
         </ul>
       </div>
-      <hr
-        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-      />
-      <span
-        class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >Copyright © 2023 |
-        <a href="/" class="hover:underline">Lakshminarayana.in</a>
-        | All Rights Reserved.
-      </span>
-      <span
-        class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >Developed by
-        <a href="/" class="hover:underline">Random Tech Solutions</a>
-      </span>
-    </footer>
+    </div>
+  </nav>
+  <!-- ##########################NAVBAR############################## -->
+  <!-- #############################Hero Section######################### -->
+  <section
+    class="pt-10 pb-24 bg-[url('./imgs/hero_bg.svg')] bg-no-repeat bg-cover overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid items-center grid-cols-1 md:grid-cols-2">
+        <div class="mt-40">
+          <h2 class="text-5xl font-bold leading-tight text-[#ACB3B8] sm:text-6xl lg:text-8xl">
+            HELLO
+          </h2>
+          <h2 class="text-3xl font-bold leading-tight text-[#0047B2] sm:text-4xl lg:text-5xl">
+            <span>I'm </span> <br />Dr.C. Lakshminarayna
+          </h2>
+          <p class="max-w-lg mt-3 text-2xl leading-relaxed text-gray-800 md:mt-8">
+            Professor EEE Chair, IEEE SSIT Bangalore Chapter, B.M.S.C.E
+            Bangalore.
+          </p>
+        </div>
 
-    <!-- #############################Footer######################### -->
-    <script>
-      const button = document.querySelector("#navbar-cta-btn");
-      const menu = document.querySelector("#navbar-cta");
+        <div class="relative top-32">
+          <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="./imgs/ln_bg.svg" alt="" />
 
-      button.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
-  </body>
+          <img class="relative bottom-0 w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+            src="./imgs/ln_img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- #############################Hero Section######################### -->
+
+  <!-- #############################Publications######################### -->
+  <section id="publications" class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="flex items-end justify-between">
+        <div class="flex-1 text-center lg:text-left">
+          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            My Top Publications
+          </h2>
+          <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=HpOuDWYAAAAJ"
+            class="hover:underline">
+            <p class="max-w-xl mx-auto mt-4 text-lg leading-relaxed text-gray-600 lg:mx-0">
+              See All<img class="inline ml-2" src="https://img.icons8.com/pastel-glyph/32/null/drag-right-arrow.png" />
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HpOuDWYAAAAJ&citation_for_view=HpOuDWYAAAAJ:5nxA0vEk-isC"
+        target="_blank"
+        class="mt-8 flex flex-col items-center justify-between bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] dark:hover:bg-[#E5DDD5]">
+        <div class="flex flex-col justify-between p-12 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+            Optimal siting of capacitors in radial distribution network using
+            whale optimization algorithm
+          </h5>
+          <p class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700">
+            In present days, continuous effort is being made in bringing down
+            the line losses of the electrical distribution networks. Therefore
+            proper allocation of capacitors is of utmost importance because,
+            it will help in reducing the line losses and maintaining the bus
+            voltage. This in turn results in improving the stability and
+            reliability of the system.
+          </p>
+        </div>
+
+        <img class="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-[40%] md:rounded-none md:rounded-l-lg"
+          src="./imgs/publication_1.png" alt="" />
+      </a>
+      <a target="_blank"
+        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HpOuDWYAAAAJ&citation_for_view=HpOuDWYAAAAJ:UebtZRa9Y70C"
+        class="mt-8 flex flex-col items-center justify-between bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] dark:hover:bg-[#E5DDD5]">
+        <div class="flex flex-col justify-between p-12 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+            Multiple DG placements in distribution system for power loss
+            reduction using PSO algorithm
+          </h5>
+          <p class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700">
+            Optimal placement and optimal sizing of Distributed Generation
+            (DG) for the sake of reduction in power loss and improvement of
+            voltage profile in distribution networks are investigated in this
+            paper. Particle Swarm Optimization (PSO) algorithm is used to find
+            out the best location and optimal size of DG.
+          </p>
+        </div>
+
+        <img class="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-[40%] md:rounded-none md:rounded-l-lg"
+          src="./imgs/publication_1.png" alt="" />
+      </a>
+      <a target="_blank"
+        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HpOuDWYAAAAJ&citation_for_view=HpOuDWYAAAAJ:4DMP91E08xMC"
+        class="mt-8 flex flex-col items-center justify-between bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] dark:hover:bg-[#E5DDD5]">
+        <div class="flex flex-col justify-between p-12 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+            Multiple DG placements in radial distribution system for multi
+            objectives using Whale Optimization Algorithm
+          </h5>
+          <p class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700">
+            This study proposes a new application of Whale Optimization
+            Algorithm (WOA) with an aim of finding optimal placement and size
+            of Distributed Generation (DGs) for multi-objectives.
+            Multi-objectives include power loss minimization, voltage profile
+            improvement and operating cost minimization subjected to equality
+            and inequality constraints.
+          </p>
+        </div>
+
+        <img class="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-[40%] md:rounded-none md:rounded-l-lg"
+          src="./imgs/publication_1.png" alt="" />
+      </a>
+      <!-- Cards end -->
+    </div>
+  </section>
+
+  <!-- #############################Publications######################### -->
+  <!-- #############################Footer######################### -->
+
+  <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="/" class="flex items-center">
+        <span
+          class="self-center mb-2 sm:mb-0 text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.in</span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023 |
+      <a href="/" class="hover:underline">Lakshminarayana.in</a>
+      | All Rights Reserved.
+    </span>
+    <span class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400">Developed by
+      <a href="/" class="hover:underline">Random Tech Solutions</a>
+    </span>
+  </footer>
+
+  <!-- #############################Footer######################### -->
+  <script>
+    const button = document.querySelector("#navbar-cta-btn");
+    const menu = document.querySelector("#navbar-cta");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
 </html>
