@@ -1,238 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0047B2" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon_io/site.webmanifest" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-      * {
-        font-family: "Poppins", sans-serif;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      ::-webkit-scrollbar {
-        width: 0.7vw;
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: -webkit-linear-gradient(transparent, #999);
-        background: linear-gradient(transparent, #999);
-        border-radius: 20px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: -webkit-linear-gradient(transparent, #00c6ff);
-        background: linear-gradient(transparent, #00c6ff);
-        border-radius: 10px;
-      }
-    </style>
-    <title>Lakshminarayana.in</title>
-  </head>
-  <body>
-    <!-- ##########################NAVBAR############################## -->
-    <nav
-      class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded"
-    >
-      <div class="flex flex-wrap items-center justify-between mx-auto">
-        <a href="./index.html" class="flex items-center">
-          <span
-            class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
-            >Lakshminarayana.in</span
-          >
-        </a>
-        <div class="flex md:order-2">
-          <button
-            type="button"
-            class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Contact Me
-          </button>
-          <button
-            id="navbar-cta-btn"
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="./index.html"
-                class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="./index.html#publications"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
-                >Publications</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="./other_works.html"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
-                >Other Work</a
-              >
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0047B2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="./favicon_io/site.webmanifest" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.7vw;
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: -webkit-linear-gradient(transparent, #999);
+      background: linear-gradient(transparent, #999);
+      border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: -webkit-linear-gradient(transparent, #00c6ff);
+      background: linear-gradient(transparent, #00c6ff);
+      border-radius: 10px;
+    }
+  </style>
+  <title>Lakshminarayana.in</title>
+</head>
+
+<body>
+  <!-- ##########################NAVBAR############################## -->
+  <nav class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded">
+    <div class="flex flex-wrap items-center justify-between mx-auto">
+      <a href="./index.html" class="flex items-center">
+        <span
+          class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.in</span>
+      </a>
+      <div class="flex md:order-2">
+        <button type="button"
+          class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Contact Me
+        </button>
+        <button id="navbar-cta-btn" data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
-    </nav>
-    <!-- ##########################NAVBAR############################## -->
-
-    <!-- #############################About Me######################### -->
-    <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="flex items-end justify-between">
-          <div class="flex-1 text-center lg:text-left">
-            <h2
-              class="text-3xl mb-4 mt-12 md:mt-4 font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
-            >
-              About Me
-            </h2>
-          </div>
-        </div>
-        <img src="./imgs/about_me_img.png" alt="Profile" class="mt-8" />
-        <p class="mt-8">
-          <b class="text-lg"> Prof. Dr. C LAKSHMINARAYANA </b>is Professor in
-          the Department of Electrical and Electronics Engineering with over 18
-          years of experience in B.M.S. College of Engineering and Equity Action
-          Plan Nodal officer (TEQIP), BMS College of Engineering. He has an
-          extensive experience in designing curriculum, developing education
-          pedagogy and managing industry- institute interaction.
-          <br />
-          <br />
-          He has headed the department during 2016-2019. He has been involved
-          with research in Power System Engineering. He has produced 4 Ph.D
-          Scholars and guiding 6 Ph.D. students and directed 22 Master’s
-          students and many undergraduate students. He has more than 35 research
-          publications to his credit and has received BEST PAPER AWARD: “VLC FOR
-          UNDERWATER OPERATIONS” Third International Conference on Electrical,
-          Electronics, Communication, Computer Technologies and Optimization
-          Techniques (ICEECCOT-2018) & has Filed PATENTS for “APPARATUS OF
-          ETCHED COPPER CLAD COOKTOP” on January 31, 2019
-          <br />
-          <br />
-          He has completed several research projects, including a DRDO-funded
-          project on wireless energy harvesting and TEQIP-sponsored projects on
-          wind turbine-based energy harvesting control systems and solar PV wind
-          hybrid with DC microgrids. He has also served as an evaluator/advisor
-          for several committees and is a senior member of the IEEE and a life
-          member of ISTE. He received grants from AICTE and an award of
-          excellence in higher education from the Centre for Leadership
-          Development, Venus International Foundation, Chennai on 2nd Nov 2019.
-          . He is skilled at working individually and in teams, handling
-          multiple tasks, and managing time efficiently.
-        </p>
-      </div>
-    </section>
-
-    <!-- #############################About Me######################### -->
-    <!-- #############################Footer######################### -->
-
-    <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <a href="./index.html" class="flex items-center">
-          <span
-            class="self-center text-xl mb-2 sm:mb-0 md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
-            >Lakshminarayana.in</span
-          >
-        </a>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
         <ul
-          class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
-        >
+          class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700">
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+            <a href="./index.html"
+              class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
+              aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+            <a href="./index.html#publications"
+              class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Publications</a>
           </li>
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Projects</a>
           </li>
           <li>
-            <a href="#" class="hover:underline">LinkedIn</a>
+            <a href="./other_works.html"
+              class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Other
+              Work</a>
           </li>
         </ul>
       </div>
-      <hr
-        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-      />
-      <span
-        class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >Copyright © 2023 |
-        <a href="/" class="hover:underline">Lakshminarayana.in</a>
-        | All Rights Reserved.
-      </span>
-      <span
-        class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >Developed by
-        <a href="/" class="hover:underline">Random Tech Solutions</a>
-      </span>
-    </footer>
+    </div>
+  </nav>
+  <!-- ##########################NAVBAR############################## -->
 
-    <!-- #############################Footer######################### -->
-    <script>
-      const button = document.querySelector("#navbar-cta-btn");
-      const menu = document.querySelector("#navbar-cta");
+  <!-- #############################About Me######################### -->
+  <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="flex items-end justify-between">
+        <div class="flex-1 text-center lg:text-left">
+          <h2 class="text-3xl mb-4 mt-12 md:mt-4 font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            About Me
+          </h2>
+        </div>
+      </div>
+      <img src="./imgs/about_me_img.png" alt="Profile" class="mt-8" />
+      <p class="mt-8">
+        <b class="text-lg"> Prof. Dr. C LAKSHMINARAYANA </b>is Professor in
+        the Department of Electrical and Electronics Engineering with over 18
+        years of experience in B.M.S. College of Engineering and Equity Action
+        Plan Nodal officer (TEQIP), BMS College of Engineering. He has an
+        extensive experience in designing curriculum, developing education
+        pedagogy and managing industry- institute interaction.
+        <br />
+        <br />
+        He has headed the department during 2016-2019. He has been involved
+        with research in Power System Engineering. He has produced 4 Ph.D
+        Scholars and guiding 6 Ph.D. students and directed 22 Master’s
+        students and many undergraduate students. He has more than 35 research
+        publications to his credit and has received BEST PAPER AWARD: “VLC FOR
+        UNDERWATER OPERATIONS” Third International Conference on Electrical,
+        Electronics, Communication, Computer Technologies and Optimization
+        Techniques (ICEECCOT-2018) & has Filed PATENTS for “APPARATUS OF
+        ETCHED COPPER CLAD COOKTOP” on January 31, 2019
+        <br />
+        <br />
+        He has completed several research projects, including a DRDO-funded
+        project on wireless energy harvesting and TEQIP-sponsored projects on
+        wind turbine-based energy harvesting control systems and solar PV wind
+        hybrid with DC microgrids. He has also served as an evaluator/advisor
+        for several committees and is a senior member of the IEEE and a life
+        member of ISTE. He received grants from AICTE and an award of
+        excellence in higher education from the Centre for Leadership
+        Development, Venus International Foundation, Chennai on 2nd Nov 2019.
+        . He is skilled at working individually and in teams, handling
+        multiple tasks, and managing time efficiently.
+      </p>
+    </div>
+  </section>
 
-      button.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
-  </body>
+  <!-- #############################About Me######################### -->
+  <!-- #############################Footer######################### -->
+
+  <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="./index.html" class="flex items-center">
+        <span
+          class="self-center text-xl mb-2 sm:mb-0 md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.in</span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023 |
+      <a href="/" class="hover:underline">Lakshminarayana.in</a>
+      | All Rights Reserved.
+    </span>
+    <span class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400">Developed by
+      <a href="/" class="hover:underline">Random Tech Solutions</a>
+    </span>
+  </footer>
+
+  <!-- #############################Footer######################### -->
+  <script>
+    const button = document.querySelector("#navbar-cta-btn");
+    const menu = document.querySelector("#navbar-cta");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
 </html>
