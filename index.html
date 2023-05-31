@@ -45,17 +45,19 @@
 
 <body>
   <!-- ##########################NAVBAR############################## -->
-  <nav class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10">
+  <nav class=" bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10">
     <div class="flex flex-wrap items-center justify-between mx-auto">
       <a href="./index.html" class="flex items-center">
         <span
           class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.in</span>
       </a>
       <div class="flex md:order-2">
-        <button type="button"
-          class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Contact Me
-        </button>
+        <a href="./contactMe.html">
+          <button type="button"
+            class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Contact Me
+          </button>
+        </a>
         <button id="navbar-cta-btn" data-collapse-toggle="navbar-cta" type="button"
           class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-cta" aria-expanded="false">
@@ -81,7 +83,7 @@
               class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Publications</a>
           </li>
           <li>
-            <a href="#"
+            <a href="./projects.html"
               class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Projects</a>
           </li>
           <li>
@@ -145,7 +147,7 @@
         target="_blank">
         <div
           class="mt-8 flex flex-col bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] p-12 dark:hover:bg-[#E5DDD5]">
-          <div class="flex md:pr-8 pb-2 flex-col w-full md:w-1/2 justify-between leading-normal">
+          <div class="flex md:pr-8 pb-2 flex-col w-full md:w-1/2 justify-around leading-normal">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
               Optimal siting of capacitors in radial distribution network using
               whale optimization algorithm
@@ -169,12 +171,12 @@
         target="_blank">
         <div
           class="mt-8 flex flex-col bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] p-12 dark:hover:bg-[#E5DDD5]">
-          <div class="flex md:pr-8 pb-2 flex-col w-full md:w-1/2 justify-between leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+          <div class="flex md:pr-8 pb-2 flex-col w-full md:w-1/2 justify-around leading-normal">
+            <h5 class=" text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
               Multiple DG placements in distribution system for power loss
               reduction using PSO algorithm
             </h5>
-            <p class="mb-3 text-justify font-normal text-gray-700 dark:text-gray-700">
+            <p class=" mb-3 text-justify font-normal text-gray-700 dark:text-gray-700">
               Optimal placement and optimal sizing of Distributed Generation
               (DG) for the sake of reduction in power loss and improvement of
               voltage profile in distribution networks are investigated in this
@@ -192,7 +194,7 @@
         target="_blank">
         <div
           class="mt-8 flex flex-col bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-[#FFF8F2] p-12 dark:hover:bg-[#E5DDD5]">
-          <div class="flex md:pr-8 pb-2 flex-col w-full md:w-1/2 justify-between leading-normal">
+          <div class="flex md:pr-8 pb-2 flex-col w-full md:w-1/2 justify-around leading-normal">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
               Multiple DG placements in radial distribution system for multi
               objectives using Whale Optimization Algorithm
@@ -216,26 +218,24 @@
     </div>
 
     <!-- grid -->
-    <div class="grid grid-rows-3 grid-cols-3 gap-x-6 gap-y-6 mt-12 px-64">
+    <div class="flex flex-col md:grid md:grid-rows-3 md:grid-cols-3 md:gap-x-6 md:gap-y-6 mt-12 max-w-[85rem] mx-auto">
 
       <!-- element 1 -->
-      <div class="col-span-2 h-[405px] bg-[#CCFBF1] rounded-3xl relative">
+      <div
+        class="col-span-2 h-[405px] mx-4 my-2 md:m-0 bg-[#CCFBF1] rounded-3xl relative bg-gradient-to-br from-[#CCFBF1] to-[#BBDCE9]">
         <img src="./imgs/publications_chip1.svg" class="absolute left-[25px] top-[25px]">
-        <div class="relative h-[145px] w-[145px] -translate-x-1/2 -translate-y-1/2 top-[45%] left-[50%] rounded-full">
-          <img src="./imgs/publications_pic1.png"
-            class="absolute -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%]">
-          <img src="./imgs/publications_pic2.png"
-            class="absolute -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%]">
+        <img src="./imgs/publications_pic1.png" class="invisible md:visible absolute left-[65%] bottom-0 ">
+        <img src="./imgs/publications_pic2.png" class="absolute -translate-x-full left-[95%] md:left-[65%] top-0">
+        <div class="absolute bottom-[5rem] left-[1rem] font-bold text-2xl px-8"> PUBLICATIONS
         </div>
-        <div class="font-['Inter'] absolute bottom-[5rem] left-[1rem] font-bold text-2xl px-8"> PUBLICATIONS
-        </div>
-        <div class="text-xs absolute bottom-[4rem] left-[1rem] px-8">Have a look on my caseStudies and process ... (<a
-            href="#publications" class="text-blue-700">read more</a>)
+        <div class="text-xs absolute bottom-[3rem] md:bottom-[4rem] left-[1rem] px-8">Have a look on my caseStudies and
+          process ... (<a href="#publications" class="text-blue-700">read more</a>)
         </div>
       </div>
 
       <!-- element 2 -->
-      <div class="h-[405px]  bg-[#FFEDD5] rounded-3xl relative">
+      <div
+        class="h-[405px] mx-4 my-2 md:m-0 bg-[#FFEDD5] rounded-3xl relative bg-gradient-to-br from-[#FFEDD5] to-[#FED7AA] overflow-hidden">
         <img src="./imgs/projects_chip1.svg" class="absolute left-[25px] top-[25px]">
 
         <div class="flex flex-row absolute items-end -translate-x-1/2 -translate-y-1/2 top-[45%] left-[50%]">
@@ -254,53 +254,66 @@
               class="absolute h-[35%] -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%]">
           </div>
         </div>
-        <div class="font-['Inter'] absolute bottom-[5rem] left-[1rem] font-bold text-2xl px-8"> PROJECTS
+        <div class="font-['Inter'] absolute bottom-[3.5rem] left-[1rem] font-bold text-2xl px-8"> PROJECTS
+          <div class="text-xs font-normal">
+            Learn how to be a product manager and how to face the interview process... (<a href="projects.html"
+              class="text-blue-700">read more</a>)
+          </div>
         </div>
-        <div class="text-xs absolute bottom-[3rem] left-[1rem] px-8">Learn how to be a product manager and how to face
-          the
-          interview process... (<a href="projects.html" class="text-blue-700">read more</a>)
-        </div>
+
       </div>
 
       <!-- element 3 -->
-      <div class="h-[405px]  bg-[#FEF9C3] rounded-3xl relative">
+      <div
+        class="h-[405px] mx-4 my-2 md:m-0 bg-[#FEF9C3] rounded-3xl relative bg-gradient-to-br from-[#FEF9C3] to-[#FEF08A]">
         <img src="./imgs/aboutME_chip1.svg" class="absolute left-[25px] top-[25px]">
         <div
           class="bg-[#F9FAFB] relative h-[145px] w-[145px] -translate-x-1/2 -translate-y-1/2 top-[45%] left-[50%] rounded-full">
           <img src="./imgs/aboutME_chip2.svg" class="absolute -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%]">
         </div>
-        <div class="font-['Inter'] absolute bottom-[5rem] left-[1rem] font-bold text-2xl px-8"> ABOUT ME
+        <!--  -->
+        <div class="font-['Inter'] absolute bottom-[3rem] left-[1rem] font-bold text-2xl px-8"> ABOUT ME
+          <div class="text-xs font-normal">
+            I believe in empathizing with
+            customers to solve their problems. I aspire... (<a href="aboutMe.html" class="text-blue-700">read more</a>)
+          </div>
         </div>
-        <div class="text-xs absolute bottom-[3rem] left-[1rem] px-8">I believe in empathizing with
-          customers to solve their problems. I aspire... (<a href="aboutMe.html" class="text-blue-700">read more</a>)
-        </div>
+        <!--  -->
       </div>
 
       <!-- element 4 -->
-      <div class="col-span-2 h-[405px]  bg-[#958DD9] rounded-3xl relative">
+      <div
+        class="col-span-2 h-[405px] mx-4 my-2 md:m-0 bg-[#958DD9] rounded-3xl relative bg-gradient-to-br from-[#F3E8FF] to-[#D8B4FE]">
         <img src="./imgs/otherWorks_chip1.svg" class="absolute left-[25px] top-[25px]">
         <div
-          class="flex flex-row w-full relative justify-between -translate-x-1/2 -translate-y-1/2 top-[45%] left-[50%] px-20">
-          <img src="./imgs/otherWorks_pic1.png">
+          class="flex flex-row w-full relative justify-center md:justify-between -translate-x-1/2 -translate-y-1/2 top-[45%] left-[50%] p-0 md:px-4 lg:px-20">
+          <img src="./imgs/otherWorks_pic1.png" class="hidden md:block ">
           <img src="./imgs/otherWorks_pic2.png">
         </div>
-        <div class="font-['Inter'] absolute bottom-[5rem] left-[1rem] font-bold text-2xl px-8"> OTHER WORKS
+        <!--  -->
+        <div class="font-['Inter'] absolute bottom-[3rem] left-[1rem] font-bold text-2xl px-8"> OTHER WORKS
+          <div class="text-xs font-normal">
+            If there’s anything on your mind,
+            we’d love to hear
+            from
+            you... (<a href="aboutMe.html" class="text-blue-700">read more</a>)
+          </div>
         </div>
-        <div class="text-xs absolute bottom-[4rem] left-[1rem] px-8">If there’s anything on your mind, we’d love to hear
-          from
-          you... (<a href="aboutMe.html" class="text-blue-700">read more</a>)
-        </div>
+        <!--  -->
       </div>
 
       <!-- element 5 -->
-      <div class="flex flex-row col-span-3 w-full h-[405px] bg-[#9E69AA] rounded-3xl relative">
-        <div class="flex flex-col grow">
-          <div class="font-['Inter'] absolute bottom-[5rem] left-[1rem] font-bold text-2xl px-8"> GET IN TOUCH </div>
-          <div class="text-xs absolute bottom-[4rem] left-[1rem] px-8"> Find inspiration has never been easier than now
-          </div>
-          <img src="./imgs/getInTouch_chip1.svg">
+      <div
+        class="flex flex-col md:flex-row mx-4 my-2 md:m-0 md:col-span-3 bg-[#9E69AA] rounded-3xl h-[405px] bg-gradient-to-br from-[#DDD6FE] to-[#A78BFA]">
+        <div class="flex flex-col w-full md:w-1/2 h-1/2 md:h-full items-center justify-center">
+          <div class=" font-bold text-4xl">GET IN TOUCH</div>
+          <div class="h-2"></div>
+          <div class="text-xs text-[#9E69AA]">Find inspiration has never been easier than now</div>
+          <div class="h-2"></div>
+          <img src="./imgs/getInTouch_chip1.svg" class="h-[4rem]">
         </div>
-        <div class="grow">
+        <div
+          class="flex  text-center w-full md:w-1/2 h-1/2 md:h-full text-[#403930] font-['Poppins'] text-3xl md:text-4xl font-semibold md:leading-relaxed py-12">
           Let us work together and make everything super fun and super useful.
         </div>
       </div>
